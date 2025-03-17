@@ -8,7 +8,7 @@ h6 {
 .grid_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 2px solid #000;
+  /* border-bottom: 2px solid #000; */
 }
 .betalingstekst {
   display: grid;
