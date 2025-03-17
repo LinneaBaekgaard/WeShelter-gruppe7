@@ -1,0 +1,48 @@
+---
+// src/components/DonationForm.astro
+---
+
+<section class="grid_2">
+  <div class="betalingstekst">
+    <h5>Hjemløse har brug for ly. Vi har brug for dig.</h5>
+    <p>
+      Knap 6.000 unge og voksne i Danmark er hjemløse. De lever på gaden, sover
+      på sofaen hos en bekendt eller bor midlertidigt på herberg.
+    </p>
+    <h6>Hjælp dem med at genfinde hverdagen og troen på dem selv.</h6>
+  </div>
+
+  <div class="betalingsformular">
+    <div class="progress-bar">
+      <div class="step aktiv">1</div>
+      <div class="linje"></div>
+      <div class="step passiv">2</div>
+      <div class="linje"></div>
+      <div class="step passiv">3</div>
+    </div>
+
+    <div class="step-labels">
+      <span>Vælg beløb</span>
+      <span>Dine oplysninger</span>
+      <span>Betaling</span>
+    </div>
+
+    <div class="donationsbeløb">
+      <button class="knap active">Støt månedligt</button>
+      <button class="knap">Enkel donation</button>
+    </div>
+
+    <div class="prismængde">
+      <button class="mængde-knap">75 kr</button>
+      <button class="mængde-knap selected">150 kr</button>
+      <button class="mængde-knap">300 kr</button>
+    </div>
+
+    <div class="selvvalgt-beløb">
+      <input type="text" placeholder="Indtast eget beløb" />
+      <span>kr.</span>
+    </div>
+
+    <button class="gå_videre_knap">Gå videre</button>
+  </div>
+</section>
