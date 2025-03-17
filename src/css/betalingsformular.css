@@ -1,0 +1,128 @@
+h5 {
+  font-size: 35px;
+}
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.grid_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #000;
+}
+.betalingstekst {
+  display: grid;
+  grid-column: 1;
+  margin: 0 150px;
+}
+.betalingsformular {
+  grid-column: 2;
+  background-color: #e7f6ff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin: 50px;
+}
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step.aktiv {
+  background: #3a77ff;
+}
+.step.passiv {
+  background: black;
+}
+.linje {
+  flex-grow: 1;
+  height: 2px;
+  background: black;
+  margin: 0 5px;
+}
+.step-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 15px;
+}
+.donationsbeløb {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.knap {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  border: 2px solid #ccc;
+}
+.knap.active {
+  background: #3a77ff;
+  color: white;
+  border: none;
+}
+.prismængde {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.mængde-knap {
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.mængde-knap.selected {
+  background: #3a77ff;
+  color: white;
+  border: none;
+}
+.selvvalgt-beløb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.selvvalgt-beløb input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+.gå_videre_knap {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
