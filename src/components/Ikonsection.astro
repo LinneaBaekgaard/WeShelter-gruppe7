@@ -1,24 +1,12 @@
 ---
 // src/components/Ikonsection.astro
 // Props
-const { number, text } = Astro.props;
+const { number, text, image } = Astro.props;
 ---
 
 <section class="grid_1-1-1">
   <div class="statistik-card">
-    <img src="/public/imgs/bowl_icon.png" alt="Bowl ikon" class="ikon" />
-    <p class="nummer">{number}</p>
-    <p class="tekst">{text}</p>
-  </div>
-
-  <div class="statistik-card">
-    <img src="/public/imgs/door_icon.png" alt="Bowl ikon" class="ikon" />
-    <p class="nummer">{number}</p>
-    <p class="tekst">{text}</p>
-  </div>
-
-  <div class="statistik-card">
-    <img src="/public/imgs/money_icon.png" alt="Money ikon" class="ikon" />
+    <img src={image} alt="Bowl ikon" class="ikon" />
     <p class="nummer">{number}</p>
     <p class="tekst">{text}</p>
   </div>
@@ -28,10 +16,8 @@ const { number, text } = Astro.props;
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    margin: 40px;
-    padding: 100px 0 100px 0;
+    /* border-top: 2px solid #000;
+    border-bottom: 2px solid #000; */
   }
 
   .statistik-card {

@@ -11,7 +11,20 @@ import Ikonsection from "../components/Ikonsection.astro";
   <Navigation />
   <Herosection />
   <Betalingsformular />
-  <Ikonsection number="4937" text="Måltider serveret i fællessalen" />
-  <Ikonsection number="302" text="Hjemløse fik egen bolig" />
-  <Ikonsection number="120.000" text="Kr. blev indsamlet i 2024 til WeShares formål. " />
+  <section class="grid_1-1-1">
+    <Ikonsection number="4937" text="Måltider serveret i fællessalen" image="imgs/bowl_icon.png" />
+    <Ikonsection number="302" text="Hjemløse fik egen bolig" image="imgs/door_icon.png" />
+    <Ikonsection number="120.000" text="Kr. blev indsamlet i 2024 til WeShares formål. " image="imgs/money_icon.png" />
+  </section>
 </Layout>
+
+<style>
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: auto;
+    padding: auto;
+  }
+</style>
