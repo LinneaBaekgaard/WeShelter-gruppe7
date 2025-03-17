@@ -1,0 +1,60 @@
+---
+// src/components/Ikonsection.astro
+// Props
+const { number, text } = Astro.props;
+---
+
+<section class="grid_1-1-1">
+  <div class="statistik-card">
+    <img src="/public/imgs/bowl_icon.png" alt="Bowl ikon" class="ikon" />
+    <p class="nummer">{number}</p>
+    <p class="tekst">{text}</p>
+  </div>
+
+  <div class="statistik-card">
+    <img src="/public/imgs/door_icon.png" alt="Bowl ikon" class="ikon" />
+    <p class="nummer">{number}</p>
+    <p class="tekst">{text}</p>
+  </div>
+
+  <div class="statistik-card">
+    <img src="/public/imgs/money_icon.png" alt="Money ikon" class="ikon" />
+    <p class="nummer">{number}</p>
+    <p class="tekst">{text}</p>
+  </div>
+</section>
+
+<style>
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 40px;
+    padding: 100px 0 100px 0;
+  }
+
+  .statistik-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ikon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .nummer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+
+  .tekst {
+    font-size: 1rem;
+    color: #333;
+  }
+</style>
