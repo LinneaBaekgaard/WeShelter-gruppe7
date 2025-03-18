@@ -6,20 +6,13 @@ const { number, text, image } = Astro.props;
 
 <section class="grid_1-1-1">
   <div class="statistik-card">
-    <img src={image} alt="Bowl ikon" class="ikon" />
+    <div class="ikon"></div>
     <p class="nummer">{number}</p>
     <p class="tekst">{text}</p>
   </div>
 </section>
 
 <style>
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* border-top: 2px solid #000;
-    border-bottom: 2px solid #000; */
-  }
-
   .statistik-card {
     display: flex;
     flex-direction: column;
@@ -28,9 +21,17 @@ const { number, text, image } = Astro.props;
   }
 
   .ikon {
+    background-image: url(`${image}`);
     width: 80px;
-    height: auto;
+    aspect-ratio: 1;
     margin-bottom: 8px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+  }
+
+  .ikon:hover {
+    background-size: 110%;
   }
 
   .nummer {
