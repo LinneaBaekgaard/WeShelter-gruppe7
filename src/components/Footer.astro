@@ -1,0 +1,46 @@
+---
+// src/components/Footer.astro
+---
+
+<section class="footer">
+  <div class="venstre">
+    <h5>Fonden Missionen blandt Hjemløse</h5>
+    <p>Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at gøre op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på herberger, væresteder og i frivillige indsatser.</p>
+  </div>
+  <h3>Få hjælp</h3>
+  <nav class="hjaelp">
+    <ul>
+      <li><a href="#"></a>Herberger</li>
+      <li><a href="#"></a>Væresteder</li>
+      <li><a href="#"></a>Aktiviteter</li>
+    </ul>
+    <h3>Genveje</h3>
+    <nav class="genveje">
+      <ul>
+        <li><a href="#"></a>Kontakt</li>
+        <li><a href="#"></a>Nyheder</li>
+        <li><a href="#"></a>Forside</li>
+      </ul>
+    </nav>
+    <h3>Kontakt</h3>
+    <nav>
+      <ul>
+        <li>Slotsgade 2, 1. sal 2200 København N</li>
+        <li>Tlf 36161113 kontakt@weshelter.dk CVR 8096515</li>
+      </ul>
+    </nav>
+  </nav>
+</section>
+
+<style>
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0f172a;
+    color: #fff;
+  }
+  nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+</style>
