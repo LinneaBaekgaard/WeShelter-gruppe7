@@ -3,43 +3,79 @@
 ---
 
 <section class="frivilligsection">
-  <img class="frivillig-billede" src="/public/imgs/frivillig.png" alt="Billede af to glade mennesker." />
+  <img
+    class="frivillig-billede"
+    src="/public/imgs/frivillig.png"
+    alt="Billede af to glade mennesker."
+  />
   <div class="frivillig-tekst">
     <h6>Bidrag med din tid</h6>
     <p>
-      Frivillighed er en helt central del af vores arbejde i Missionen blandt Hjemløse, og som frivillig er du med til at skabe unikke relationer og gøre en forskel for hjemløse og socialt udsatte. Se nedenfor, hvilke muligheder, der er for at blive
-      frivillig, og læs mere om, hvad det frivillige arbejde hos os indebærer.
+      Frivillighed er en helt central del af vores arbejde i Missionen blandt
+      Hjemløse, og som frivillig er du med til at skabe unikke relationer og
+      gøre en forskel for hjemløse og socialt udsatte. Se nedenfor, hvilke
+      muligheder, der er for at blive frivillig, og læs mere om, hvad det
+      frivillige arbejde hos os indebærer.
       <br />
       <br />
-      <strong> Bliv frivillig og vær med til at give hjemløse og socialt udsatte en bedre hverdag.</strong>
+      <strong>
+        Bliv frivillig og vær med til at give hjemløse og socialt udsatte en
+        bedre hverdag.</strong
+      >
     </p>
     <button class="frivillig_knap">Læs mere om at være frivillig</button>
   </div>
 </section>
 
 <style>
-  .frivilligsection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 70px;
+  @media (max-width: 768px) {
+    .frivilligsection {
+      margin: 20px;
+    }
+    .frivillig-billede {
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+    }
+    .frivillig-tekst {
+      padding: 20px;
+    }
+    h6 {
+      font-size: 24px;
+    }
+    .frivillig_knap {
+      background-color: black;
+      color: #fff;
+      height: 30px;
+      width: 215px;
+      border-radius: 20px;
+    }
   }
-  .frivillig-billede {
-    grid-column: 1;
-    margin: auto;
-    padding: auto;
-  }
-  .frivillig-tekst {
-    grid-column: 2;
-    padding-right: 250px;
-  }
-  h6 {
-    font-size: 44px;
-  }
-  .frivillig_knap {
-    background-color: black;
-    color: #fff;
-    height: 30px;
-    width: 215px;
-    border-radius: 20px;
+
+  @media (min-width: 769px) {
+    .frivilligsection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 70px;
+    }
+    .frivillig-billede {
+      grid-column: 1;
+      margin: auto;
+      padding: auto;
+    }
+    .frivillig-tekst {
+      grid-column: 2;
+      padding-right: 250px;
+    }
+    h6 {
+      font-size: 44px;
+    }
+    .frivillig_knap {
+      background-color: black;
+      color: #fff;
+      height: 30px;
+      width: 215px;
+      border-radius: 20px;
+    }
   }
 </style>

@@ -1,25 +1,69 @@
-.hero-section {
-    background-color: #256AF6;
-    padding: 150px 100px 150px 100px;
-}
-.grid_1 {
+@media (max-width: 768px) {
+  .hero-section {
+    background-color: #256af6;
+    padding: 100px 50px 100px 50px;
+  }
+
+  .grid_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.hero-billeder {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-billeder {
     grid-column: 1;
     position: relative;
-}
-.billede1 {
+  }
+
+  .billede1 {
     position: absolute;
     z-index: 2;
     bottom: 20px;
-    left: 20px; 
+    left: 20px;
+    width: 250px;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .billede2 {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    display: block;
+    right: 70px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-tekst {
+    grid-column: 1;
+    color: white;
+    margin: 0 0 0 0px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-section {
+    background-color: #256af6;
+    padding: 150px 100px 150px 100px;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-billeder {
+    grid-column: 1;
+    position: relative;
+  }
+  .billede1 {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 20px;
     width: 350px;
     height: auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-.billede2 {
+  }
+  .billede2 {
     position: absolute;
     z-index: 1;
     width: 300px;
@@ -27,20 +71,21 @@
     display: block;
     right: 70px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-.hero-tekst {
+  }
+  .hero-tekst {
     grid-column: 2;
     color: white;
     margin: 0 70px 0 0px;
-}
-h2 {
+  }
+  h2 {
     font-size: 55px;
     font-weight: normal;
-}
-h3 {
+  }
+  h3 {
     font-size: 22px;
     font-weight: normal;
-}
-h4 {
+  }
+  h4 {
     font-size: 13px;
+  }
 }
