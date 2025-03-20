@@ -36,3 +36,124 @@
     }
   });
 </script>
+
+<style>
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .burgermenu {
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+
+    .burgermenu .line {
+      width: 28px;
+      height: 2px;
+      background-color: #256af6;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul.show {
+      display: flex;
+      align-items: flex-start; /* Juster tekstens position */
+    }
+
+    nav li {
+      margin: 16px 0;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0; /* Placerer menuen i højre side */
+      margin: 0;
+      width: 400px;
+      height: 432px;
+      background-color: #0f172a;
+      z-index: 1;
+      list-style: none;
+      padding: 13% 10% 0 10%;
+    }
+
+    .burgermenu.open .line {
+      background-color: white; /* Ændrer farven på krydset */
+    }
+
+    .burgermenu.open .line:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 8px;
+      z-index: 15;
+    }
+
+    .burgermenu.open .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .burgermenu.open .line:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 8px;
+      z-index: 15;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    .menu {
+      padding: 15px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 15px 40px;
+    }
+    .logo {
+      font-size: 60px;
+      font-weight: bold;
+      color: #333;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .stoetknap {
+      background: #1e90ff;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+  }
+</style>
