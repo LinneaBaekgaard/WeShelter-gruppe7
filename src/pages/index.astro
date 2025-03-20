@@ -16,9 +16,21 @@ import Footer from "../components/Footer.astro";
   <section class="ikonerne">
     <h5>Dét gik jeres donationer til i 2024</h5>
     <div class="grid_1-1-1">
-      <Ikonsection number="4937" text="Måltider serveret i fællessalen" image="imgs/bowl_icon.png" />
-      <Ikonsection number="302" text="Hjemløse fik egen bolig" image="imgs/door_icon.png" />
-      <Ikonsection number="120.000" text="Kr. blev indsamlet i 2024 til WeShares formål. " image="imgs/money_icon.png" />
+      <Ikonsection
+        number="4937"
+        text="Måltider serveret i fællessalen"
+        image="imgs/bowl_icon.png"
+      />
+      <Ikonsection
+        number="302"
+        text="Hjemløse fik egen bolig"
+        image="imgs/door_icon.png"
+      />
+      <Ikonsection
+        number="120.000"
+        text="Kr. blev indsamlet i 2024 til WeShares formål. "
+        image="imgs/money_icon.png"
+      />
     </div>
   </section>
   <Frivilligsection />
@@ -26,15 +38,33 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
-  .ikonerne {
-    text-align: center;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    margin: 100px;
+  @media (max-width: 768px) {
+    h5 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .ikonerne {
+      text-align: center;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      margin: 100px;
+    }
   }
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 30px;
+  @media (min-width: 769px) {
+    h5 {
+      font-size: 35px;
+    }
+    .ikonerne {
+      text-align: center;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      margin: 100px;
+    }
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 30px;
+    }
   }
 </style>
