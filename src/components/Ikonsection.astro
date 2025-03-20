@@ -13,10 +13,23 @@ const { number, text, image } = Astro.props;
 </section>
 
 <style>
-  @media (max-widt: 768px) {
+  @media (max-width: 768px) {
     .grid_1-1-1 {
       display: grid;
       grid-template-columns: 1fr;
+    }
+    .statistik-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 90px 20px 40px 20px;
+    }
+
+    .nummer {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 4px 0;
     }
   }
 
