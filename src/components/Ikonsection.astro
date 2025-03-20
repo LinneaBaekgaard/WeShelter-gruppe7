@@ -13,22 +13,31 @@ const { number, text, image } = Astro.props;
 </section>
 
 <style>
-  .statistik-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  @media (max-widt: 768px) {
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
-  .ikon {
-    margin-bottom: 8px;
-  }
-  .nummer {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 4px 0;
-  }
-  .tekst {
-    font-size: 1rem;
-    color: #333;
+
+  @media (min-width: 769px) {
+    .statistik-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .ikon {
+      margin-bottom: 8px;
+    }
+    .nummer {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 4px 0;
+    }
+    .tekst {
+      font-size: 1rem;
+      color: #333;
+    }
   }
 </style>

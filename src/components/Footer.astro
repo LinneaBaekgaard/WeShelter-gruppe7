@@ -5,7 +5,11 @@
 <section class="footer">
   <div class="venstre">
     <h5>Fonden Missionen blandt Hjemløse</h5>
-    <p>Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at gøre op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på herberger, væresteder og i frivillige indsatser.</p>
+    <p>
+      Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at gøre
+      op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på
+      herberger, væresteder og i frivillige indsatser.
+    </p>
   </div>
   <h3>Få hjælp</h3>
   <nav class="hjaelp">
@@ -33,15 +37,31 @@
 </section>
 
 <style>
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #0f172a;
-    color: #fff;
+  @media (max-width: 768px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      background-color: #0f172a;
+      color: #e7e7e7;
+      text-align: center;
+    }
+    nav ul li {
+      list-style-type: none;
+      text-decoration: none;
+    }
   }
-  nav ul li {
-    list-style-type: none;
-    text-decoration: none;
-    color: #fff;
+
+  @media (min-width: 769px) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: #0f172a;
+      color: #fff;
+    }
+    nav ul li {
+      list-style-type: none;
+      text-decoration: none;
+      color: #fff;
+    }
   }
 </style>

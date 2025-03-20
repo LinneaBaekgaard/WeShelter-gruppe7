@@ -1,34 +1,44 @@
 /******************** Header menu ********************/
-.menu {
+@media (max-width: 768px) {
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 15px 40px;
-}
-.logo {
+  }
+  .logo {
     font-size: 60px;
     font-weight: bold;
     color: #333;
-}
-.nav-links {
+  }
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 50px;
-}
-.nav-links li {
+  }
+  .nav-links li {
     display: inline;
-}
-.nav-links a {
+  }
+  .nav-links a {
     text-decoration: none;
     color: black;
     font-size: 24px;
     font-weight: 500;
-}
-.støtknap {
-    background: #1E90FF;
+  }
+  .støtknap {
+    background: #1e90ff;
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
     font-weight: bold;
+  }
 }
