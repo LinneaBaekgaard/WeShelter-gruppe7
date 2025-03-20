@@ -2,66 +2,138 @@
 // src/components/Footer.astro
 ---
 
-<section class="footer">
-  <div class="venstre">
+<div class="footer_container">
+  <div class="footer_section">
     <h5>Fonden Missionen blandt Hjemløse</h5>
-    <p>
-      Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at gøre
-      op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på
-      herberger, væresteder og i frivillige indsatser.
-    </p>
+    <p>Vi arbejder for at give hjemløse og udsatte bedre vilkår. Målet er at gøre op med hjemløshed, ensomhed og psykisk mistrivsel. Arbejdet sker på herberger, væresteder og i frivillige indsatser.</p>
   </div>
-  <h3>Få hjælp</h3>
-  <nav class="hjaelp">
+
+  <div class="hjaelp_section">
+    <h3>Få hjælp</h3>
     <ul>
       <li><a href="#"></a>Herberger</li>
       <li><a href="#"></a>Væresteder</li>
       <li><a href="#"></a>Aktiviteter</li>
     </ul>
+  </div>
+
+  <div class="genveje_section">
     <h3>Genveje</h3>
-    <nav class="genveje">
-      <ul>
-        <li><a href="#"></a>Kontakt</li>
-        <li><a href="#"></a>Nyheder</li>
-        <li><a href="#"></a>Forside</li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="#"></a>Kontakt</li>
+      <li><a href="#"></a>Nyheder</li>
+      <li><a href="#"></a>Forside</li>
+    </ul>
+  </div>
+
+  <div class="kontakt-section">
     <h3>Kontakt</h3>
-    <nav>
-      <ul>
-        <li>Slotsgade 2, 1. sal 2200 København N</li>
-        <li>Tlf 36161113 kontakt@weshelter.dk CVR 8096515</li>
-      </ul>
-    </nav>
-  </nav>
-</section>
+    <p>
+      Slotsgade 2, 1. sal<br />
+      2200 København N
+    </p>
+    <p>Tlf 36161113</p>
+    <p><a href="mailto:kontakt@weshelter.dk">kontakt@weshelter.dk</a></p>
+    <p>CVR 8096515</p>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>Copyright © 2025 Fonden Missionen blandt Hjemløse</p>
+</div>
 
 <style>
   @media (max-width: 768px) {
-    .footer {
+    .footer_container {
+      padding: 40px 0;
       display: flex;
       flex-direction: column;
       background-color: #0f172a;
       color: #e7e7e7;
       text-align: center;
     }
-    nav ul li {
-      list-style-type: none;
+    .footer_container ul {
+      list-style: none;
+      padding: 0;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    .footer_container a {
+      color: #fff;
       text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer_container a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      background-color: #0f172a;
+      color: #e7e7e7;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #222;
+      font-size: 13px;
     }
   }
 
   @media (min-width: 769px) {
-    .footer {
+    /* .footer {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       background-color: #0f172a;
       color: #fff;
+    } */
+    .footer_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 auto;
+      padding: 0 20px;
+      padding-top: 50px;
+      background-color: #0f172a;
+      color: #e7e7e7;
     }
-    nav ul li {
-      list-style-type: none;
-      text-decoration: none;
+    .hjaelp_section {
+      grid-column: 2;
+    }
+    .genveje_section {
+      grid-column: 3;
+    }
+    .kontakt-section {
+      grid-column: 4;
+    }
+    .hjaelp_section,
+    .genveje_section,
+    .kontakt-section {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    .footer_container ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer_container a {
       color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer_container a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      background-color: #0f172a;
+      color: #e7e7e7;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #222;
+      font-size: 13px;
     }
   }
 </style>
