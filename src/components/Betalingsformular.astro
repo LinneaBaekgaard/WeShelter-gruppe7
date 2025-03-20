@@ -4,10 +4,11 @@
 
 <section class="grid_2">
   <div class="betalingstekst">
-    <h5>Hjemløse har brug for ly. Vi har brug for dig.</h5>
+    <h5>Hjemløse har brug for ly. <br /> Vi har brug for dig.</h5>
     <p>
       Knap 6.000 unge og voksne i Danmark er hjemløse. De lever på gaden, sover
-      på sofaen hos en bekendt eller bor midlertidigt på herberg.
+      på sofaen hos en bekendt eller bor midlertidigt på herberg. Mange lever i
+      ensomhed, og har mistet kontakten til både familien og de nærmeste venner.
     </p>
     <h6>Hjælp dem med at genfinde hverdagen og troen på dem selv.</h6>
   </div>
@@ -27,22 +28,191 @@
       <span>Betaling</span>
     </div>
 
-    <div class="donationsbeløb">
+    <div class="donationsbeloeb">
       <button class="knap active">Støt månedligt</button>
       <button class="knap">Enkel donation</button>
     </div>
 
-    <div class="prismængde">
-      <button class="mængde-knap">75 kr</button>
-      <button class="mængde-knap selected">150 kr</button>
-      <button class="mængde-knap">300 kr</button>
+    <div class="prismaengde">
+      <button class="maengde-knap">75 kr</button>
+      <button class="maengde-knap selected">150 kr</button>
+      <button class="maengde-knap">300 kr</button>
     </div>
 
-    <div class="selvvalgt-beløb">
-      <input type="text" placeholder="Indtast eget beløb" />
+    <div class="selvvalgt-beloeb">
+      <input type="text" placeholder="Indtast eget beloeb" />
       <span>kr.</span>
     </div>
 
-    <button class="gå_videre_knap">Gå videre</button>
+    <button class="gaa_videre_knap">Gå videre</button>
   </div>
 </section>
+
+<style>
+  p {
+    line-height: 1.6;
+  }
+
+  .betalingsformular {
+    background-color: #e7f6ff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step.aktiv {
+    background: #3a77ff;
+  }
+  .step.passiv {
+    background: black;
+  }
+  .linje {
+    flex-grow: 1;
+    height: 2px;
+    background: black;
+    margin: 0 5px;
+  }
+  .step-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+  }
+  .donationsbeloeb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .knap {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #ccc;
+  }
+  .knap.active {
+    background: #3a77ff;
+    color: white;
+    border: none;
+  }
+  .prismaengde {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .maengde-knap {
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .maengde-knap.selected {
+    background: #3a77ff;
+    color: white;
+    border: none;
+  }
+  .selvvalgt-beloeb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .selvvalgt-beloeb input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .gaa_videre_knap {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    h5 {
+      font-size: 25px;
+    }
+
+    h6 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .betalingstekst {
+      padding: 40px;
+    }
+
+    .betalingsformular {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 769px) {
+    h5 {
+      font-size: 30px;
+
+      margin-top: 0;
+    }
+
+    h6 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      margin-right: 40px;
+    }
+
+    .grid_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .betalingsformular {
+      margin: 150px 50px 50px 50px;
+    }
+
+    .betalingstekst {
+      margin: 150px 70px 0 120px;
+    }
+  }
+</style>
