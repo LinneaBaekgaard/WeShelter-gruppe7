@@ -5,156 +5,107 @@
 <section class="hero-section">
   <div class="grid_1">
     <div class="hero-billeder">
-      <img
-        class="billede2"
-        src="/public/imgs/hero_messy.jpg"
-        alt="Billede af en mand i ny bolig"
-      />
-      <img
-        class="billede1"
-        src="/public/imgs/hero_horisontal.jpg"
-        alt="Billede af glad hjemloes person"
-      />
+      <img class="billede2" src="/public/imgs/hero_messy.jpg" alt="Billede af en mand i ny bolig" />
+      <img class="billede1" src="/public/imgs/hero_horisontal.jpg" alt="Billede af glad hjemloes person" />
     </div>
 
     <div class="hero-tekst">
       <h2>I 2024 flyttede Bo ind i sit nye hjem...</h2>
-      <h3>
-        ...og med din hjælp, kan WeShelter hjælpe endnu flere udsatte borgere
-        med at få et tryggere liv.
-      </h3>
-      <a href="#doner"
-        ><h4>
-          Se hvordan du kan støtte WeShelter herunder <br /><span class="pil"
-            >&#8595;</span
-          >
-        </h4></a
-      >
+      <h3>...og med din hjælp, kan WeShelter hjælpe endnu flere udsatte borgere med at få et tryggere liv.</h3>
+      <h4>Se hvordan du kan støtte WeShelter herunder</h4>
     </div>
   </div>
+
+  <style>
+    @media (max-width: 768px) {
+      .hero-section {
+        background-color: #256af6;
+        padding: 100px 50px 100px 50px;
+      }
+
+      .grid_1 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-billeder {
+        grid-column: 1;
+        position: relative;
+      }
+
+      .billede1 {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        top: 30px;
+        width: 250px;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .billede2 {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        display: block;
+        right: 10px;
+        top: -10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-tekst {
+        grid-column: 1;
+        color: white;
+        margin: 0 0 0 0px;
+        padding-top: 300px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .hero-section {
+        background-color: #256af6;
+        padding: 150px 100px 150px 100px;
+      }
+      .grid_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .hero-billeder {
+        grid-column: 1;
+        position: relative;
+      }
+      .billede1 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 350px;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      .billede2 {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        display: block;
+        right: 70px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      .hero-tekst {
+        grid-column: 2;
+        color: white;
+        margin: 0 70px 0 0px;
+      }
+      h2 {
+        font-size: 55px;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: normal;
+      }
+      h4 {
+        font-size: 13px;
+      }
+    }
+  </style>
 </section>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  h4 {
-    color: white;
-    line-height: 2;
-  }
-
-  h3 {
-    font-weight: 100;
-  }
-  @media (max-width: 768px) {
-    h4 {
-      font-size: 12px;
-    }
-
-    .pil {
-      font-size: 20px;
-    }
-
-    .hero-section {
-      background-color: #256af6;
-      padding: 100px 50px 100px 50px;
-    }
-
-    .grid_1 {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    .hero-billeder {
-      grid-column: 1;
-      position: relative;
-    }
-
-    .billede1 {
-      position: absolute;
-      bottom: 20px;
-      left: 10px;
-      top: 30px;
-      width: 250px;
-      height: auto;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .billede2 {
-      position: absolute;
-      width: 200px;
-      height: auto;
-      display: block;
-      right: 10px;
-      top: -10px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-tekst {
-      grid-column: 1;
-      color: white;
-      margin: 0 0 0 0px;
-      padding-top: 300px;
-    }
-  }
-
-  @media (min-width: 769px) {
-    h4 {
-      font-size: 26px;
-    }
-
-    .pil {
-      font-size: 24px;
-    }
-
-    .hero-section {
-      background-color: #256af6;
-      padding: 150px 100px 150px 100px;
-    }
-    .grid_1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .hero-billeder {
-      grid-column: 1;
-      position: relative;
-    }
-    .billede1 {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      width: 350px;
-      height: auto;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    .billede2 {
-      position: absolute;
-      width: 300px;
-      height: auto;
-      display: block;
-      right: 70px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    .hero-tekst {
-      grid-column: 2;
-      color: white;
-      margin: 0 70px 0 0px;
-    }
-    h2 {
-      font-size: 55px;
-      font-weight: normal;
-    }
-    h3 {
-      font-size: 22px;
-      font-weight: normal;
-    }
-    h4 {
-      font-size: 13px;
-    }
-  }
-</style>
